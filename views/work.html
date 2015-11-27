@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>works</title>
+	<style type="text/css">
+
+		body{
+			width: 100%;
+			height: 100%;
+		}
+		video{
+			width: 30%;
+			height:30%;
+		}
+		#bc{
+			background-image: url("/static/img/beijing.jpg");
+			width: 120px;
+			height: 120px;
+			background-size: 100% 100%;
+			padding-top:30px;
+			color: white;
+			font-size: 0.6em;
+			text-align: center;
+		}
+		a.nav_item{
+			display: inline-block;
+			text-decoration: none;
+			background-color: gray;
+			padding: 20px;
+			margin: -5px;
+			position: relative;
+			font-weight: 500;
+			box-sizing: border-box;
+		}
+
+
+		li{
+			display: table-cell;
+			width: 1%;
+		}
+
+	</style>
+</head>
+<body>
+
+	<audio controls="controls">
+		Your browser does not support the audio element.
+		<source src="/static/audio.mp3" type="audio/mpeg"/>
+	</audio>
+
+	<video controls="controls">
+		<source src="/static/movie.ogg"/>
+	</video>
+	<hr>
+	<br>
+	<a title="this is a test text" href="javascript:history.go(-1);"> <img src="/static/img/htz.jpg" alt="this is a test text"></a>
+
+	<a href="/" style="	text-decoration: none;">
+		<div id="bc">
+			珠海<br/>
+			初阶二日禅<br/>
+			2015-0606
+		</div>
+	</a>
+
+	<ul>
+		<li>home</li>
+		<li>Link</li>
+	</ul>
+	<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+</body>
+</html>
