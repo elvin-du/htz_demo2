@@ -50,3 +50,7 @@ function click_bar(e){
 	console.log("X 坐标: " + x + ", Y 坐标: " + y+"offset:"+offset)
 	$(".bar").width(x-offset);
 }
+
+function Play_Video(){
+	$("#movie")[0].play();
+}
