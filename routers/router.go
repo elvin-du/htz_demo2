@@ -12,4 +12,5 @@ func init() {
     beego.Router("/studygolang", &controllers.StudyGolangController{})
     beego.Router("/share", &controllers.ShareController{})
     beego.Router("/music", &controllers.MusicController {})
+    beego.Router("/ajax", &controllers.AjaxController{})
 }

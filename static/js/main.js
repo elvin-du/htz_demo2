@@ -6,9 +6,26 @@ function ff(){
 }
 x.onended = ff;
 
+var m = $("#movie").get();
 $(document).ready(function(){
-	// set_progress();	
+	// set_progress();
+	$("#movie").on("timeupdate",function(){
+		$(".curtime").text($(this)[0].currentTime);
+	});
+
+	$("#movie").on("loadedmetadata",function(){
+		$(".duration").text($(this)[0].duration);
+	});
+
+	$("#ajaxBtn").on("click",ajax_demo);
 });
+
+function ajax_demo(){
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.open("GET","http://www.baidu.com",false)
+	xmlhttp.send()
+	alert(xmlhttp.responseText)
+}
 
 var t
 var i = 0;
@@ -52,5 +69,5 @@ function click_bar(e){
 }
 
 function Play_Video(){
-	$("#movie")[0].play();
+	m[0].play();
 }

@@ -27,12 +27,20 @@
   <br>
 
   <div>
-    <video id="movie">
+    <video id="movie" controls="controls" width="500px;" height="500px;">
       <source src="/static/video.ogg" type="video/ogg">
       </source>
     </video>
+    <div class="progesstime">
+      <div class="curtime"></div>
+      <div class="duration"></div>
+    </div>
     <button class="video_player" onclick="Play_Video();">Player</button>
   </div>
+
+  <button id="ajaxBtn">
+    Ajax
+  </button>
 </div>
 
 <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
